@@ -1,0 +1,23 @@
+{
+  "name": "node-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "isAuthenticated.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mart-anthony-stark/Ecommerce-microservice-architecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mart-anthony-stark/Ecommerce-microservice-architecture/issues"
+  },
+  "homepage": "https://github.com/mart-anthony-stark/Ecommerce-microservice-architecture#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}
