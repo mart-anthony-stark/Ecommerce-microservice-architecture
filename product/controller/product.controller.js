@@ -6,6 +6,8 @@ module.exports = {
     res.send(products);
   },
   createProduct: async (req, res) => {
-    res.send("create");
+    const newProduct = new Product(req.body);
+    await newProduct.save();
+    res.send(newProduct);
   },
 };
