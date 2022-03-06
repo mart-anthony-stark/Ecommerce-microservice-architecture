@@ -10,4 +10,9 @@ module.exports = {
     await newProduct.save();
     res.send(newProduct);
   },
+  buyProduct: async (req, res) => {
+    const { ids } = req.body;
+    const products = await Product.find({ _id: { $in: ids } }); // If one of the ids array
+    
+  },
 };
