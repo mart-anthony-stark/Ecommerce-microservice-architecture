@@ -5,4 +5,7 @@ module.exports = {
     const products = await Product.find();
     res.send(products);
   },
+  createProduct: async (req, res) => {
+    res.send("create");
+  },
 };
