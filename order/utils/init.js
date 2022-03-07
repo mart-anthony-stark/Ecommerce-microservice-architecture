@@ -4,7 +4,7 @@ const init = async (app) => {
   const PORT = process.env.PORT || 8080;
   app.listen(PORT, (e) => {
     if (e) return console.log(e);
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Order service running on port ${PORT}`);
   });
 
   await mongoose.connect(process.env.DB_URI, {
