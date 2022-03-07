@@ -7,13 +7,7 @@
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "keywords": [
-    "node",
-    "express",
-    "fastify",
-    "boillerplate",
-    "template"
-  ],
+  "keywords": [],
   "author": "Mart Salazar",
   "license": "ISC",
   "dependencies": {
