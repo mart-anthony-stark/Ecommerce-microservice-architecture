@@ -7,6 +7,6 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use("/posts", require("./routes/posts.route"));
+app.use("/orders", require("./routes/order.route"));
 
 init(app);
