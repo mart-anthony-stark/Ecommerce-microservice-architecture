@@ -1,4 +1,5 @@
 const Product = require("../models/Product.model");
+const { channel } = require("../utils/createConn");
 
 module.exports = {
   getAllProduct: async (req, res) => {
@@ -13,6 +14,11 @@ module.exports = {
   buyProduct: async (req, res) => {
     const { ids } = req.body;
     const products = await Product.find({ _id: { $in: ids } }); // If one of the ids array
-    
+
+    channel.sendToQueue(
+      "ORDER",
+      Buffer.from(JSON.stringify({ products, userEmail: req.user.email }))
+    );
+    res.send(products);
   },
 };
